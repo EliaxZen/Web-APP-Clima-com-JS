@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <title>Clima</title>
+    <link rel="shortcut icon" type="imagex/png" href="/images/iconSol.png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="resultado">
+        <div class="titulo">--</div>
+        <img class="iconTemp" src="http://openweathermap.org/img/wn/10d@2x.png" />
+        <form class="busca">
+            <input type="search" id="searchInput" />
+            <button>Buscar</button>
+        </form>
+        <div class="info">
+            <div class="temp">
+                <div class="tempTitulo"><img src="images/iconTemp.gif"/></div>
+                <div class="tempInfo">-- <sup>ºC</sup></div>
+            </div>
+        </div>
+        <div class="vento">
+            <div class="ventoTitulo"><img src="images/iconVento.gif"/></div>
+            <div class="ventoInfo">-- <span>km/h</span></div>
+            <div class="ventoArea">
+                <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aviso"></div>
+    <img class="loading" src="images/iconCarregando.gif" />
+    <img class="error" src="images/error.gif" />
+    <footer>Criado por <a href="">Elias</a></footer>
+
+
+    <img class="voltar" src="" />
+    <script src="script.js"></script>
+</body>
+</html>
