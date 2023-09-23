@@ -19,8 +19,7 @@ document.querySelector('.busca').addEventListener('submit', async (event) => {
         country: json.sys.country,
         temp: json.main.temp,
         tempIcon: json.weather[0].icon,
-        windSpeed: json.wind.speed,
-        windAngle: json.wind.deg
+        windSpeed: json.wind.speed
       });
     } else {
       clearInfo();
@@ -41,7 +40,6 @@ function showInfo(json) {
   document.querySelector('.tempInfo').innerHTML = `${json.temp} <sup>ºC</sup>`;
   document.querySelector('.ventoInfo').innerHTML = `${json.windSpeed} <span>km/h</span>`;
   document.querySelector('.iconTemp').setAttribute('src', `http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`);
-  document.querySelector('.ventoPonto').style.transform = `rotate(${json.windAngle-90}deg)`;
 
   document.querySelector('.resultado').style.display = 'flex';
  }
