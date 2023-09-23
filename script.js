@@ -24,7 +24,6 @@ document.querySelector('.busca').addEventListener('submit', async (event) => {
     } else {
       clearInfo();
       showWarning('Não encontamos esta localização');
-      loading.style.display = 'none';
     }
   } else {
     clearInfo();
@@ -40,7 +39,7 @@ function showInfo(json) {
   document.querySelector('.iconTemp').setAttribute('src', `http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`);
 
   document.querySelector('.resultado').style.display = 'flex';
-    loading.style.display = 'none';
+  loading.style.display = 'none';
  }
 
  function clearInfo() {
@@ -54,5 +53,4 @@ function showWarning(msg) {
 }
 
 let loading = document.querySelector('.loading');
-let error = document.querySelector('.error');
 
