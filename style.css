@@ -154,10 +154,11 @@ footer, a {
 
 @media (max-width: 768px) {
     body {
-        height: 80vh;
+        height: 90vh;
     }
     .resultado {
         width: 95%;
+        height: 70%;
     }
     .busca {
         align-items: center;
