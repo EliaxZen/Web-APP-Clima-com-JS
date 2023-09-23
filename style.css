@@ -48,7 +48,9 @@ h1 {
 .busca button:hover {
   background-color: #444;
 }
-
+.busca input[type="placeholder"] {
+  color: #000;
+}
 .resultado {
   width: 400px;
   height: 80%;
